@@ -8,7 +8,9 @@ const tasksRoutes = new Router()
     ctx.response.body = "Welcome to my API";
   })
   .get("/tasks", (ctx) => {
-    ctx.response.body = tasks;
+    ctx.response.body = {
+      tasks,
+    };
   })
   .post("/tasks", async (ctx) => {
     const newTask = await ctx.request.body().value;
