@@ -17,6 +17,7 @@ const tasksRoutes = new Router()
   });
 
 app.use(tasksRoutes.routes());
+app.use(tasksRoutes.allowedMethods());
 
 console.log("Server running on port 8000");
 await app.listen({ port: 8000 });

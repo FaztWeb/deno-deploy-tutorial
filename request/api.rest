@@ -1,4 +1,5 @@
-@api = http://localhost:8000
+# @api = http://localhost:8000
+@api = https://fazt-deno-tutorial.deno.dev
 
 ### get root
 GET {{api}}
@@ -8,7 +9,7 @@ GET {{api}}/tasks
 
 ### create tasks routes
 POST {{api}}/tasks
-Content-Type: application/json
+Content-Type: application/json1
 
 {
   "title": "Task 1",
