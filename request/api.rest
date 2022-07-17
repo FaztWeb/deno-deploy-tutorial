@@ -1,0 +1,17 @@
+@api = http://localhost:8000
+
+### get root
+GET {{api}}
+
+### tasks routes
+GET {{api}}/tasks
+
+### create tasks routes
+POST {{api}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "description": "Task 1 description",
+  "status": "todo"
+}
